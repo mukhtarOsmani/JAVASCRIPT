@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ex
+        {
+            background-color: chartreuse;
+            padding: 4px;
+            border: crimson solid 2px;
+        }
+    </style>
+     <script src="./jquery-3.6.0.min.js" ></script>
+</head>
+<body>
+    <button type="button" id="clikhere">Click Here</button>
+    <H1>click here!</H1>
+  
+    <div class="ex">
+        <button type="button" id="btnhide"> hide me</button>
+        <p> 222222 mumntmen blvd <br>
+         Leve me please</p>
+    </div>
+
+    <H1>Hello All!</H1>
+    <div class="ex">
+        <button type="button" class="hide"> hide me</button>
+        <p> 2121212 bosh street <br>
+         hide me please</p>
+    </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    $("#btnhide").click(function () {
+
+        alert("HELLO EVERYONE");
+        // $(".ex").hide("slow");
+        $(this).parents(".ex").hide("slow");
+        
+    });
+    
+});
+
+
+$(document).ready(function(){
+
+$("#clikhere").click(function(){
+    alert("HELLO EVERYONE")
+})
+
+})
+
+
+
+</script>
+
+    
+   
+
+ 
+
+</body>
+</html>

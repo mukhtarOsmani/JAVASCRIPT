@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="checkCookies()">
+
+        <h1 id="formHeader">Please use this form to login</h1>
+    <form name="loginForm" action="http://www.google.com" onsubmit=" return formValidation()" method="post" target="_blank" >
+        <input type="text" name="userName" id="userName"  >
+        <br>  <br>
+        <input type="password" name="password">
+        <br>  <br>
+        <input type="submit" name="btnSubmit" value="Login" id="btnSubmit"  onclick="document.getElementById('formHeader').style.color = 'green' " >
+
+    </form>
+    <h3 id="loginMessage"></h3>
+    <!-- <button type="button"  onclick="document.getElementById('formHeader').style.color = 'green' ">Click here</button> -->
+    <!-- <input type="submit"  value="fdgdf" onclick="document.getElementById('formHeader').color = 'green' " > -->
+
+
+    <script>
+            // function formValidation() {
+            //  var txtUserName =  document.forms["loginForm"]["userName"].value;
+
+            //  if(txtUserName == "")
+            //  {
+            //      alert("UserName is required");
+            //      return false;
+            //  }
+
+                
+            // }
+
+
+        // function checkCookies()
+        // {
+        //     var message = "";
+        //     if(navigator.cookieEnabled == true)
+        //     message = "Cookies are enabled";
+        //     else
+        //     {
+        //         message = "Cookies are not enabled";
+        //     }
+        //     alert(message);
+        // }    
+
+
+        document.getElementById("btnSubmit").addEventListener("mousedown", ShowLoginMessage); 
+        document.getElementById("btnSubmit").addEventListener("mouseup", changeColor); 
+ 
+        function ShowLoginMessage()
+        {
+            document.getElementById("loginMessage").innerHTML = "your loged in Successfully "
+        }
+
+        function changeColor()
+        {
+            document.getElementById('loginMessage').style.color = 'green'
+            
+        }
+
+
+
+
+
+    </script>
+
+
+
+    
+</body>
+</html>

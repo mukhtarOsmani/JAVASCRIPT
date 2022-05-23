@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+
+    <style type="text/css">
+        #box
+        {
+            width: 100px;
+            height: 300px;
+            background-color: blueviolet;
+        }
+    </style>
+
+
+</head>
+<body>
+    <button type="button" id="btnSlideUp">Start</button>
+
+    <button type="button" id="btnStop">STOP</button>
+
+    <button type="button" id="btnChain">Chaining</button>
+    <h1 id="header1">WELCOME</h1>
+    <div id="box"></div>
+<br>
+
+   
+   
+   
+   
+   
+    <!-- <button type="button" id="btnslide">Slide toggle</button>
+    <button type="button" id="btnZoom">Toggle</button>
+    <button type="button" id="btnZoomIn">Zoom In</button> -->
+  <script>
+      $(document).ready(function()
+      {
+      $("#btnChain").click(function(){
+            $("#box").slideDown(1000).fadeOut(2000);
+            
+            // .slideDown(1000).
+          
+
+        });
+   
+
+         $("#btnSlideUp").click(function(){
+            $("#box").slideUp(2000, function(){
+                alert("Action Completed Successfully")
+            });
+        });
+    });
+        // $("#btnStop").click(function(){
+        //     $("#box").stop();
+        // });
+
+
+
+ // $("#btnAnimate").click(function(){
+        //     $("#box").animate({
+        //         opacity: '0.5',
+        //         height: '200px',
+        //         width: '200px'
+        //     })
+        // });
+
+        // $("#btnZoomIn").click(function(){
+
+        //     var box  = $("#box");
+
+
+        //     box.animate({
+                
+        //         opacity: '0.5',
+        //         height: '200px',
+        //         width: '200px'
+        //     }, "slow");
+        //     box.animate({
+                
+        //         opacity: '0.5',
+        //         height: '300px',
+        //         width: '300px'
+        //     }, "slow");
+        //     box.animate({
+                
+        //         opacity: '0.5',
+        //         height: '400px',
+        //         width: '400px'
+        //     }, "slow")
+
+        // });
+
+
+
+        // $("#btnSLidedown").click(function(){
+        //     $("#box").slideDown(1000);
+        // });
+
+        // $("#btnslide").click(function(){
+        //     $("#box").slideToggle("slow");
+        // });
+
+        // $("#btnSLideup").click(function(){
+        //     $("#box").slideUp(1000);
+        // });
+        // $("#btnSLidedown").click(function(){
+        //     $("#box").slideDown(1000);
+        // });
+
+        // $("#btnslide").click(function(){
+        //     $("#box").slideToggle("slow");
+        // });
+
+        // $("#btnfadeto").click(function(){
+        //     $("#box").fadeTo("slow", 0.70);
+        // });
+
+        // $("#btnFadeIn").click(function(){
+        //     $("#box").fadeIn(1000);
+        // });
+        // $("#btnFadeOut").click(function(){
+        //     $("#box").fadeOut(1000);
+        // });
+
+        // $("#btnfade").click(function(){
+        //     $("#box").fadeToggle("slow");
+        // });
+
+        // $("#btnfadeto").click(function(){
+        //     $("#box").fadeTo("slow", 0.70);
+        // });
+
+        // $("#btnHide").click(function(){
+        //     $("#box").hide(1000);
+        // });
+        // $("#btnShow").click(function(){
+        //     $("#box").show(2000);
+        // });
+
+        // $("#btnShowHide").click(function(){
+        //     $("#box").toggle(1000);
+        // });
+</script>
+       
+
+
+
+
+
+    
+</body>
+</html>
